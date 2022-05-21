@@ -23,6 +23,12 @@
         width: 1400px;
         transform-origin: center center 0;
         animation: spin 3.5s 1.25s ease-in-out infinite;
+
+        @media(max-width: 500px) {
+            bottom: -900px;
+            width: 900px;
+            // height: 1200px;
+        }
     }
 
     .coin_left{
