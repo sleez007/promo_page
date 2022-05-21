@@ -28,7 +28,7 @@
     .coin_left{
         position: fixed;
         bottom: 8em;
-        left: 30em;
+        left: 27em;
         
         animation: lift 3.5s 1.25s ease-in-out infinite;
     }
@@ -36,8 +36,29 @@
     .coin_right{
         position: fixed;
         bottom: 4em;
-        right: 30em;
+        right: 27em;
         animation: right 4.2s 2.25s ease-in-out infinite;
+    }
+
+    .green_star{
+        position: fixed;
+        top:6em;
+        left: 14em;
+    }
+    .orange_star{
+        position: fixed;
+        top:12em;
+        right: 35em;
+    }
+    .white_star{
+        position: fixed;
+        top:8em;
+        right: 14em;
+    }
+    .blue_star{
+        position: fixed;
+        top:8em;
+        right: 14em;
     }
 
 
@@ -50,7 +71,7 @@
 
 @keyframes lift { 
     0% , 100%{
-        bottom: 4em;
+        bottom: 6em;
     }
     50% { 
         bottom: 8em;
@@ -59,7 +80,7 @@
 
 @keyframes right { 
     0% , 100%{
-        bottom: 2em;
+        bottom: 5em;
     }
     50% { 
         bottom: 4em;
