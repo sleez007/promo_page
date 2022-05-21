@@ -23,6 +23,7 @@ $mobile : 350px;
 :root{
     --color-white: #FFFFFF;
     --color-yellow: #ECAB03;
+    --color-grey: #94949f;
 
     --bold-font: 700;
     --medium-font: 500;
@@ -74,13 +75,14 @@ html{
     }
 
     &::-webkit-scrollbar-thumb{
-        background-color: green;
+        background-color: var(--color-yellow);
     }
 }
 
 
 //typography
 body{
+    position: relative;
     font-family: 'Inter', sans-serif;
     color: var(--color-white);
     background-image: image("background.svg");
@@ -89,5 +91,38 @@ body{
         font-family: 'Poppins', sans-serif;
     }
 
+    h1{
+        font-size: 3.0rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
 }
 
+//UTILITY LAYOUT CLASSES
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+.text-center{
+    text-align: center;
+}

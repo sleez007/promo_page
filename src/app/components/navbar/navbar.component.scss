@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 2em 0;
+
+
+    .nav{
+        height: 80%;
+        width: 100%;
+        justify-content: space-between;
+
+        &__menu-list{
+            
+            
+            &-item{
+                margin: 0 0.2em;
+                
+                &:nth-child(2){
+                    font-size: .6rem;
+                    line-height: 1.6;
+                    color: var(--color-grey);
+
+                    span{
+                        color: var(--color-white);
+                        font-size: .8rem;
+                        font-weight: var(--bold-font);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.bg{
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+
+    &__pot{
+        max-width: 30em;
+        display: block;
+        position: fixed;
+        bottom: -0em;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    &__light{
+        display: block;
+        position:fixed;
+        bottom: -1046px;
+        height: 1900px;
+        width: 1400px;
+        transform-origin: center center 0;
+        animation: spin 3.5s 1.25s ease-in-out infinite;
+    }
+
+    .coin_left{
+        position: fixed;
+        bottom: 8em;
+        left: 30em;
+        
+        animation: lift 3.5s 1.25s ease-in-out infinite;
+    }
+
+    .coin_right{
+        position: fixed;
+        bottom: 4em;
+        right: 30em;
+        animation: right 4.2s 2.25s ease-in-out infinite;
+    }
+
+
+
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+@keyframes lift { 
+    0% , 100%{
+        bottom: 4em;
+    }
+    50% { 
+        bottom: 8em;
+    } 
+}
+
+@keyframes right { 
+    0% , 100%{
+        bottom: 2em;
+    }
+    50% { 
+        bottom: 4em;
+    } 
+}
