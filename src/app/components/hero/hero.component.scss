@@ -8,6 +8,10 @@
             margin-top: -0.4em;
             display: block;
             font-weight: var(--bold-font);
+
+            @media(max-width: 500px) {
+                display:inline;
+            }
         }
     }
 
@@ -20,7 +24,12 @@
         }
         .stat{
             display:block;
+            @media(max-width: 500px) {
+                display:none;
+            }
         }
+
+        
     }
 
     

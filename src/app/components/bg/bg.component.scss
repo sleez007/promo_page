@@ -29,8 +29,15 @@
         position: fixed;
         bottom: 8em;
         left: 27em;
-        
         animation: lift 3.5s 1.25s ease-in-out infinite;
+
+        @media(max-width:1391px) {
+            left: 10em;
+        }
+
+        @media(max-width:500px) {
+            left: 0em;
+        }
     }
 
     .coin_right{
@@ -38,6 +45,14 @@
         bottom: 4em;
         right: 27em;
         animation: right 4.2s 2.25s ease-in-out infinite;
+
+        @media(max-width:1391px) {
+            right: 10em;
+        }
+
+        @media(max-width:500px) {
+            right: 0em;
+        }
     }
 
     .green_star{
